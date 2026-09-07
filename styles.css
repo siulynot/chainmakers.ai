@@ -30,3 +30,13 @@
 @keyframes travel{from{transform:translateX(-12%)}to{transform:translateX(12%)}}
 @media(max-width:620px){.hero-map:after{inset:18% 8%}.map-top span:nth-child(2n){transform:none}.map-line{height:45px}.map-core{margin:20px auto}.map-bottom{gap:6px}.map-bottom span{padding-inline:5px}.map-bottom b{width:17px;height:17px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){.map-line:after{animation:none}.map-top span,.map-core,.map-bottom span{transition:none}}
+
+/* ChainAccounts product preview: a compact, Spanish-first operations panel. */
+.accounts-visual{padding:20px 20px 20px;background:#142630}
+.accounts-visual .window-bar{border-bottom-color:#3e5661;padding:0 0 13px}
+.ca-app{display:grid;grid-template-columns:116px 1fr;min-height:235px;margin-top:18px;border:1px solid #2e4651;background:#f7f9f8;color:#20323b}
+.ca-app aside{background:#13252e;color:#b6c8ce;padding:17px 13px;display:flex;flex-direction:column;gap:10px}
+.ca-app aside b{font:700 14px/1.05 Arial;color:#fff;margin-bottom:14px;letter-spacing:-.5px}.ca-app aside b em{font-style:normal;color:#0aa7ed}.ca-app aside small{font:10px Arial;color:#a1b5bd}.ca-app aside small:first-of-type{color:#fff;background:#24404c;padding:7px 6px;margin-inline:-6px}
+.ca-main{padding:17px 18px;min-width:0}.ca-heading{display:flex;justify-content:space-between;gap:8px;align-items:center;border-bottom:1px solid #dce3e3;padding-bottom:12px}.ca-heading span{font-size:17px;font-weight:500}.ca-heading small{font:9px ui-monospace,SFMono-Regular,monospace;color:#71848a;border:1px solid #d4dede;padding:6px 7px}
+.ca-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:13px}.ca-kpis>div{background:#eef3f2;border:1px solid #dfe7e5;padding:9px 7px;min-width:0}.ca-kpis small,.ca-kpis em{display:block;font:8px Arial;color:#70838a}.ca-kpis strong{display:block;font:600 14px Arial;margin:8px 0 5px}.ca-kpis em{font-style:normal;color:#0985ae}.ca-profit{background:#e7f5f0!important}.ca-lower{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:15px}.ca-lower>div{border:1px solid #d9e3e1;padding:10px 9px}.ca-lower b{display:block;font-size:9px;font-weight:600}.ca-lower span{display:block;color:#71838a;font-size:8px;margin-top:6px}.ca-lower i{display:block;height:3px;background:#0aa7ed;margin-top:12px;width:65%}.ca-lower>div:last-child i{width:46%;background:#93aaae}
+@media(max-width:620px){.ca-app{grid-template-columns:78px 1fr}.ca-app aside{padding-inline:8px}.ca-kpis{grid-template-columns:1fr 1fr}.ca-main{padding:11px}.ca-lower{display:none}.accounts-visual{padding:14px}.ca-app aside b{font-size:11px}}

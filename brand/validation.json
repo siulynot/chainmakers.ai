@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "date": "2026-09-07",
+  "checks": [
+    "24 SVG maestros con trazados; sin bitmap incrustado, texto o fuentes externas",
+    "186 PNG y 186 WebP: dimensiones correctas, alfa real, contenido y márgenes sin recorte",
+    "Símbolo de iconos maskable dentro del círculo central de radio 40%",
+    "ICO válido con 16, 32, 48, 64 y 256 px",
+    "Todas las rutas de iconos del manifest resuelven en la selección web-ready",
+    "PDF de 8 páginas renderizado e inspeccionado visualmente"
+  ]
+}

@@ -1,0 +1,8 @@
+:root {
+  --chainmakers-cyan: #0AA7ED;
+  --chainmakers-graphite: #4B4F52;
+  --chainmakers-dark: #111820;
+  --chainmakers-white: #FFFFFF;
+}
+.chainmakers-logo { display: block; width: 240px; max-width: 100%; height: auto; }
+@media (max-width: 600px) { .chainmakers-logo { width: 180px; } }

@@ -1,0 +1,13 @@
+const assert = require('node:assert/strict');
+const { buildInquiry } = require('../app.js');
+const values = { name: 'Ana García', company: 'Taller A&B', interest: 'Automatización con IA', message: 'Quiero conectar documentos & órdenes.\nTenemos dos equipos.' };
+const url = new URL(buildInquiry(values));
+assert.equal(url.protocol, 'mailto:');
+assert.equal(url.pathname, 'chainmakerspr@gmail.com');
+assert.equal(url.searchParams.get('subject'), 'Consulta de servicios: Automatización con IA');
+const body = url.searchParams.get('body');
+for (const v of Object.values(values)) assert(body.includes(v));
+assert(body.includes('\n\n'));
+assert.equal(url.searchParams.size, 2);
+assert(!buildInquiry({ ...values, company: '' }).includes('undefined'));
+console.log('PASS: inquiry mailto, accented text, ampersands, multiline message and optional company');

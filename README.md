@@ -1,41 +1,46 @@
-# Chainmakers.ai — Brand portfolio
+# Chainmakers.ai
 
-Portfolio estático con explorador de logos y descargas del paquete de marca.
+Website corporativo de Chainmakers LLC: consultoría administrativa, desarrollo de software,
+automatización con IA e integración de sistemas, desde Puerto Rico.
 
-## Publicación
+Publicado en https://siulynot.github.io/chainmakers.ai/ mediante GitHub Pages, rama `main`, raíz.
+El dominio personalizado no se ha configurado.
 
-GitHub Pages: https://siulynot.github.io/chainmakers.ai/
+## Contenido
 
-La fuente de Pages es la rama `main`, carpeta raíz. `.nojekyll` permite servir
-directamente los archivos estáticos. No se necesitan dependencias ni un build de Node.
+- Servicios: consultoría administrativa, software, automatización e integración.
+- Productos en operación: ChainAccounts y MedReq.
+- Iniciativas en definición: Chainmakers AEC (diseño) y ChainFinance (propuesta).
+- Método de trabajo, presentación de empresa y contacto.
 
-Este repositorio publica el portfolio de identidad, no un website corporativo con
-funciones comerciales. No modifica la configuración DNS del dominio chainmakers.ai.
+El contenido comercial se preparó a partir del mapa empresarial, los contextos de producto
+y los alcances de trabajo documentados, revisados el 7 de septiembre de 2026. La agrupación
+de capacidades en cuatro servicios es editorial. No se publican propuestas confidenciales,
+datos de clientes, precios internos, casos inventados ni certificaciones no verificadas.
 
-## Estructura
+## Contacto
 
-- `index.html`, `styles.css`, `app.js`: galería adaptable a móvil, selección de composición,
-  color, fondo de vista previa, formato y resolución; copia de códigos de color.
-- `brand/`: 24 maestros SVG, 186 PNG, 186 WebP, iconos, social, integración y fuentes de exportación.
-- `downloads/`: paquete ZIP completo y guía PDF.
-- `site.webmanifest`: rutas relativas, compatibles con el subdirectorio de GitHub Pages.
-- `og.png`: tarjeta social específica del portfolio, creada con ImageGen.
+El formulario prepara un correo dirigido a `chainmakerspr@gmail.com` en la aplicación
+del visitante. La persona revisa y envía el mensaje. El sitio no transmite ni almacena
+los campos en un servidor, y no muestra una confirmación falsa de envío.
+El enlace directo de correo también funciona sin JavaScript.
 
-Todos los assets son locales; no hay fuentes, analítica ni dependencias de terceros.
-Los SVG contienen trazados reales; los PNG/WebP del logo tienen transparencia.
-La comprobación de los assets está en `brand/validation.json` y los checksums en `brand/SHA256SUMS.txt`.
+## Desarrollo
 
-## Validación y vista local
+HTML, CSS y JavaScript sin dependencias de terceros ni compilación.
 
 ```sh
 node --check app.js
+node tools/check_inquiry.cjs
 python3 tools/check_site.py
 python3 -m http.server 4173
 ```
 
-Abrir http://localhost:4173/. El website funciona sin compilación.
-La galería requiere JavaScript para cambiar variantes; los enlaces de descarga
-principal, PDF y ZIP siguen disponibles sin JavaScript.
+## Recursos de marca
 
-Para cambiar al dominio personalizado, configurar primero DNS/Pages y actualizar
-canonical y Open Graph al host efectivo. No se incluye CNAME hasta esa configuración.
+El paquete de logos, los favicons y las descargas se conservan en `brand/` y `downloads/`.
+La galería anterior se mantiene en `brand-portfolio.html` como recurso secundario.
+`og.png` es la tarjeta social del website de servicios, generada con ImageGen.
+
+Antes de configurar un dominio propio, actualizar canonical y las URLs de Open Graph
+al dominio efectivo. El manifest usa rutas relativas para funcionar bajo GitHub Pages.

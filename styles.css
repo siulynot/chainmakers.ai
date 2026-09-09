@@ -49,3 +49,5 @@
 .accounts-visual .ca-app,.medreq-visual .mr-app,.permit-visual .pv-app{flex:1;min-height:235px}
 .permit-visual .pv-app{display:grid;flex-wrap:nowrap;gap:initial;margin-top:17px}
 .permit-visual .pv-app b{font:inherit;padding:0;border:0}
+.permit-visual .pv-app aside b{font:700 14px/1 Arial;color:#fff;margin-bottom:13px;letter-spacing:-.5px}
+@media(max-width:620px){.permit-visual .pv-app aside b{font-size:11px;margin-bottom:10px}}
